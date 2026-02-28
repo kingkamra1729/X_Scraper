@@ -1,0 +1,32 @@
+# ============================================================
+# Twitter / X Scraper -- Python Dependencies
+# ============================================================
+# Install everything:
+#   pip install -r requirements.txt
+#   playwright install chromium
+# ============================================================
+
+# --- Core scraping -------------------------------------------
+playwright>=1.40.0          # Browser automation (Chromium)
+playwright-stealth>=2.0.0   # Removes navigator.webdriver + 20 other bot signals
+
+# --- Proxy finder --------------------------------------------
+requests>=2.31.0            # HTTP client used by twitter_proxy_finder.py
+
+# ============================================================
+# Notes
+# ============================================================
+# All other imports (json, threading, queue, concurrent.futures,
+# pathlib, urllib, logging, re, io, sys, time, random, dataclasses,
+# datetime, typing) are part of the Python standard library and
+# do not need to be installed.
+#
+# Python version: 3.9 or higher recommended.
+# Tested on:      Python 3.10, 3.11, 3.12
+#
+# After installing, run this once to download the browser binary:
+#   playwright install chromium
+#
+# If you used channel="chrome" in twitter_login.py (recommended),
+# you also need Google Chrome installed on your system:
+#   https://www.google.com/chrome/
